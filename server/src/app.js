@@ -5,6 +5,9 @@ import authRoutes from './routes/auth.js';
 import reviewRoutes from './routes/reviews.js';
 import userRoutes from './routes/users.js';
 import instructorRoutes from './routes/instructors.js';
+import mongoose from 'mongoose';
+
+mongoose.set('sanitizeFilter', true);
 
 const app = express();
 
